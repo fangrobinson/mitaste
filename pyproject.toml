@@ -8,8 +8,18 @@ readme = "README.md"
 [tool.poetry.dependencies]
 python = ">=3.10, <3.14"
 spotdl = "^4.4.3"
-
+librosa = "^0.11.0"
+transformers = "^4.57.6"
+torch = { version = "2.7.1+cu118", source = "pytorch-cu118" }
+torchvision = { version = "0.22.1+cu118", source = "pytorch-cu118" }
+torchaudio = { version = "2.7.1+cu118", source = "pytorch-cu118" }
 
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
+
+[[tool.poetry.source]]
+name = "pytorch-cu118"
+url = "https://download.pytorch.org/whl/cu118"
+priority = "explicit"
+
