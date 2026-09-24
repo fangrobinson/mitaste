@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "mitaste"
+version = "0.1.0"
+description = ""
+authors = ["fangrobinson <fang.robinson@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+eyed3 = "^0.9.8"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
